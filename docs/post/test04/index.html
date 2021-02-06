@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>Posts</title>
+<title>test01</title>
 
 
 
@@ -48,6 +48,10 @@
 
 
 
+
+  
+    <script src="https://inougroup1.github.io/blog//js/toc-collapse.js"></script>
+  
 
 
 
@@ -126,14 +130,17 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 </div><div ref="extraContainer" class="extra-container">
     
     
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+</div>
+    
     <div class="pagination">
         <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
             <i class="material-icons pagination-action-icon">
                 keyboard_arrow_up
             </i>
         </a>
-        
-        
         
         
     </div>
@@ -178,6 +185,11 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
                 
             
             
+            <div class="toc">
+
+
+</div>
+            
         </div>
     </div>
 </div>
@@ -210,124 +222,79 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
             <div id="content">
 <div ref="streamContainer" class="stream-container">
     <div class="post-list-container post-list-container-shadow">
-        
-            <a class="a-block">
-                <div class="post-item-wrapper post-item-wrapper-no-hover">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title post-item-title-small year">
-                                2021
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        <div class="post">
             
-            <a href="/blog/post/test04/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                test01
-                            </div>
-                            <div class="post-item-meta">
-    2021-02-06
-    &emsp;
-    
-    
-    
-    &emsp;
-    
-</div>
+            
+            
 
-                        </div>
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    test01
+                    
+                    <div class="post-meta">
                         
+                        <time itemprop="datePublished">
+                            2021-02-06 14:32
+                        </time>
                         
-                    </div>
-                </div>
-            </a>
-            
-            <a href="/blog/post/test03/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                test01
-                            </div>
-                            <div class="post-item-meta">
-    2021-02-06
-    &emsp;
-    
-    
-    
-    &emsp;
-    
-</div>
 
-                        </div>
                         
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/blog/categories/">[category1]</a>
+                                &nbsp;
                         
-                    </div>
-                </div>
-            </a>
-            
-            <a href="/blog/post/test02/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                test01
-                            </div>
-                            <div class="post-item-meta">
-    2021-02-06
-    &emsp;
-    
-    
-    
-    &emsp;
-    
-</div>
 
-                        </div>
                         
                         
                     </div>
                 </div>
-            </a>
+            </div>
             
-            <a href="/blog/post/test01/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                test01
-                            </div>
-                            <div class="post-item-meta">
-    2021-02-06
-    &emsp;
-    
-    
-    
-    &emsp;
-    
-</div>
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>test01</p>
 
-                        </div>
-                        
-                        
-                    </div>
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2021-02-06</p>
+                    
                 </div>
-            </a>
+            </div>
             
-        
-    </div>
-</div>
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts">
+			Next<br>No newer posts.
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://inougroup1.github.io/blog/post/test03/">
+			Previous<br>test01
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
 
 
             </div>
+        </div>
+    </div>
+</div>
 
-
-<div id="single-column-footer">
+            </div><div id="single-column-footer">
 Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
 <br>
 Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
