@@ -20,9 +20,12 @@ public class RunJava {
             if ( f.isDirectory() ) {
                 walk( f.getAbsolutePath() );
             }
-            else {
+	    else {
             	String fullPath = f.getAbsoluteFile().toString();
-                System.out.println(fullPath);
+            	String fileName = f.getName();
+            	if(fileName.contains("index.html")) {
+            		System.out.println(fullPath);
+            	}
             }
         }
     }
