@@ -23,6 +23,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - name: 🔨 Set up Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: '4.0.0'
+          architecture: x64
+      - run: java -cp java RunJava
       - name: 🔧 Install tools
         run: |
           sudo apt install curl jq
