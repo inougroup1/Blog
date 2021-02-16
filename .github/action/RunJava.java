@@ -3,7 +3,8 @@ import java.io.File;
 public class RunJava {
 
 	public static void main(String[] args) {
-		System.out.println("Hello java action");
+		System.out.println("Hello walk action");
+		walk(".");
 	}
 	
 	private static void walk( String path ) {
