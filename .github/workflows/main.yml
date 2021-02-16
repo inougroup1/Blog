@@ -28,7 +28,7 @@ jobs:
         with:
           java-version: '11'
           architecture: x64
-      - run: java -cp java ./.github/action/RunJava
+      - run: java -cp java .github/action/RunJava
       - name: 🔧 Install tools
         run: |
           sudo apt install curl jq
