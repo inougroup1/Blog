@@ -6,9 +6,6 @@ on:
   push:
     branches:
       - master
-  schedule:
-      # * is a special character in YAML so you have to quote this string
-      - cron:  '*/15 * * * *'
 jobs:
   build:
 
@@ -56,4 +53,11 @@ jobs:
           git add .
           git commit -am "🚀 Deploy with ${GITHUB_WORKFLOW}"
           git push --all -f https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
-          
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.FTP_URL }}
+          user: ${{ secrets.FTP_ID }}
+          password: ${{ secrets.FTP_PASS }}
+          localDir: "content"
+          remoteDir: ""         
